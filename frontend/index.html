@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIH26034 - AI Packaged Commodity Compliance Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="badge">Smart India Hackathon 2026 • SIH26034</div>
+      <h1>AI-Based Packaged Commodity Compliance Scanner</h1>
+      <p class="subtitle">
+        Automated verification of mandatory packaging declarations under the 
+        <strong>Legal Metrology (Packaged Commodities) Rules, 2011</strong>
+      </p>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="main-grid">
+      <!-- Left Column: Upload and Controls -->
+      <section class="card upload-card">
+        <div class="card-header">
+          <h2>Package Image Input</h2>
+          <span class="step-indicator">Phase 2 • OCR Active</span>
+        </div>
+
+        <p class="section-desc">
+          Upload a clear photograph of a packaged commodity label (front panel, back label, or declarations area).
+        </p>
+
+        <!-- Dropzone Area -->
+        <div class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/png, image/jpeg, image/jpg, image/webp" hidden>
+          <div class="dropzone-content" id="dropzonePrompt">
+            <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <p class="dropzone-text"><strong>Click to browse</strong> or drag & drop image here</p>
+            <span class="file-limits">Supports PNG, JPG, JPEG, WEBP (Max 16MB)</span>
+          </div>
+
+          <!-- Preview Area inside dropzone -->
+          <div class="preview-container" id="previewContainer" style="display: none;">
+            <img id="imagePreview" alt="Selected package label preview" />
+            <div class="file-meta" id="fileMeta"></div>
+          </div>
+        </div>
+
+        <!-- Action Controls -->
+        <div class="action-bar">
+          <button type="button" class="btn btn-secondary" id="resetBtn" disabled>Clear</button>
+          <button type="button" class="btn btn-outline" id="uploadOnlyBtn" disabled title="Upload image without running OCR">
+            <span>Upload Only</span>
+          </button>
+          <button type="button" class="btn btn-primary" id="scanBtn" disabled>
+            <span class="btn-icon">⚡</span>
+            <span class="btn-text">Run OCR Scan</span>
+          </button>
+        </div>
+
+        <!-- Upload / Scan Status Banner -->
+        <div class="status-banner" id="statusBanner" style="display: none;">
+          <div class="status-icon" id="statusIcon"></div>
+          <div class="status-content">
+            <div class="status-title" id="statusTitle"></div>
+            <div class="status-detail" id="statusDetail"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Results & OCR Extraction Section -->
+      <section class="card results-card">
+        <div class="card-header">
+          <h2>Extraction & Inspection Results</h2>
+          <span class="badge-status badge-idle" id="pipelineStatus">Standby</span>
+        </div>
+
+        <!-- 1. Standby Placeholder Section -->
+        <div class="placeholder-container" id="resultsPlaceholder">
+          <div class="placeholder-icon">📋</div>
+          <h3>Inspection Pipeline Ready</h3>
+          <p>
+            Select a package image and click <strong>Run OCR Scan</strong> to extract all printed label text, confidence scores, and bounding box coordinates.
+          </p>
+
+          <div class="pipeline-preview">
+            <h4 class="pipeline-title">Mandatory Declaration Pipeline</h4>
+            <ul class="pipeline-list">
+              <li>
+                <span class="dot"></span>
+                <strong>Image Preprocessing:</strong> OpenCV contrast enhancement (CLAHE) & noise suppression
+              </li>
+              <li>
+                <span class="dot"></span>
+                <strong>PaddleOCR Engine:</strong> Text detection & spatial bounding boxes
+              </li>
+              <li>
+                <span class="dot"></span>
+                <strong>Structured Fields:</strong> MRP, Net Qty, Dates, Manufacturer, Country of Origin, Consumer Care
+              </li>
+              <li>
+                <span class="dot"></span>
+                <strong>Legal Metrology Rule Engine:</strong> Verified Rule 6 statutory checks
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. Phase 1 Upload Summary (Shown only if Upload Only was clicked) -->
+        <div class="upload-summary" id="uploadSummary" style="display: none;">
+          <div class="summary-header">
+            <span class="checkmark">✔</span>
+            <h3>Upload Confirmed</h3>
+          </div>
+          <p class="summary-desc">The image has been stored safely on the local backend server.</p>
+          <div class="summary-details">
+            <div class="detail-row">
+              <span class="label">Stored Filename:</span>
+              <span class="value" id="summaryFilename">-</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Original Name:</span>
+              <span class="value" id="summaryOriginal">-</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">File Size:</span>
+              <span class="value" id="summarySize">-</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Phase 2 OCR Results Section -->
+        <div class="ocr-results-container" id="ocrResultsContainer" style="display: none;">
+          <!-- Summary Metrics Cards -->
+          <div class="metrics-row">
+            <div class="metric-card">
+              <span class="metric-label">Detected Lines</span>
+              <span class="metric-value" id="metricLineCount">0</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Average Confidence</span>
+              <span class="metric-value" id="metricAvgConf">0%</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Pipeline Stage</span>
+              <span class="metric-value metric-badge">OCR Complete</span>
+            </div>
+          </div>
+
+          <!-- Detected Text Items List -->
+          <div class="ocr-items-header">
+            <h4>Extracted Text Elements</h4>
+            <span class="ocr-count-pill" id="ocrCountPill">0 items</span>
+          </div>
+
+          <div class="ocr-list" id="ocrList">
+            <!-- Dynamically populated OCR token cards -->
+          </div>
+
+          <!-- Collapsible Raw JSON Viewer -->
+          <details class="json-details">
+            <summary class="json-summary">View Raw OCR Output (JSON)</summary>
+            <pre class="json-code" id="rawJsonCode"></pre>
+          </details>
+
+          <div class="note-box">
+            <em>Phase 2 Active: All text, confidences, and bounding boxes extracted. Subsequent phases will parse mandatory declarations and apply Legal Metrology rules.</em>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>SIH 2026 Problem Statement SIH26034 • Legal Metrology (Packaged Commodities) Rules, 2011 Compliance</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
