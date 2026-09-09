@@ -1,0 +1,665 @@
+{
+  "image": "parle_g_sample.png",
+  "results": [
+    {
+      "text": "PROMPARLER",
+      "confidence": 0.7811,
+      "box": {
+        "x": 45,
+        "y": 0,
+        "width": 129,
+        "height": 19
+      }
+    },
+    {
+      "text": "UCIS PVT.LTD., MUM",
+      "confidence": 0.8657,
+      "box": {
+        "x": 199,
+        "y": 0,
+        "width": 162,
+        "height": 22
+      }
+    },
+    {
+      "text": "Parle-G Gluco BISCUITS",
+      "confidence": 0.9702,
+      "box": {
+        "x": 0,
+        "y": 16,
+        "width": 335,
+        "height": 32
+      }
+    },
+    {
+      "text": "Parle-G",
+      "confidence": 0.9999,
+      "box": {
+        "x": 552,
+        "y": 24,
+        "width": 469,
+        "height": 81
+      }
+    },
+    {
+      "text": "GREDIENTS:REFINED WHEAT FLOUR (MAIDA) (68%), SUC",
+      "confidence": 0.9406,
+      "box": {
+        "x": 0,
+        "y": 35,
+        "width": 368,
+        "height": 31
+      }
+    },
+    {
+      "text": "REFINEO PALMOIL,INVERT SUGAR SYRUP [SUGAR CITRIC",
+      "confidence": 0.9458,
+      "box": {
+        "x": 0,
+        "y": 55,
+        "width": 363,
+        "height": 26
+      }
+    },
+    {
+      "text": "IODISED SALT, RAISING AGENTS ( 503 (), 500 (n) 1, MILK SO",
+      "confidence": 0.8327,
+      "box": {
+        "x": 0,
+        "y": 74,
+        "width": 365,
+        "height": 25
+      }
+    },
+    {
+      "text": "(0.6%). FLOUR TREATMENT AGENT (1101 ())AND EMULS",
+      "confidence": 0.9286,
+      "box": {
+        "x": 0,
+        "y": 94,
+        "width": 364,
+        "height": 22
+      }
+    },
+    {
+      "text": "OF VEGETABLEORIGIN (DIACETYLTARTARICANDFATTY ACID",
+      "confidence": 0.9765,
+      "box": {
+        "x": 0,
+        "y": 113,
+        "width": 357,
+        "height": 23
+      }
+    },
+    {
+      "text": "SELECTION",
+      "confidence": 0.9669,
+      "box": {
+        "x": 440,
+        "y": 124,
+        "width": 58,
+        "height": 20
+      }
+    },
+    {
+      "text": "NET WEIGHT:55g+10g*EXTRA=65g",
+      "confidence": 0.9996,
+      "box": {
+        "x": 571,
+        "y": 117,
+        "width": 368,
+        "height": 33
+      }
+    },
+    {
+      "text": "ESTERSOF GLYCEROLI.",
+      "confidence": 0.95,
+      "box": {
+        "x": 0,
+        "y": 131,
+        "width": 138,
+        "height": 23
+      }
+    },
+    {
+      "text": "MONTAINS ADDED FLAVOUR (ARTIFICIAL FLAVOURING",
+      "confidence": 0.9765,
+      "box": {
+        "x": 0,
+        "y": 148,
+        "width": 327,
+        "height": 24
+      }
+    },
+    {
+      "text": "SUBSTANCES-VANILLA",
+      "confidence": 0.9997,
+      "box": {
+        "x": 1,
+        "y": 167,
+        "width": 145,
+        "height": 23
+      }
+    },
+    {
+      "text": "GENE VA 1672 1878 1706",
+      "confidence": 0.7864,
+      "box": {
+        "x": 425,
+        "y": 166,
+        "width": 118,
+        "height": 14
+      }
+    },
+    {
+      "text": "MRP",
+      "confidence": 0.9987,
+      "box": {
+        "x": 604,
+        "y": 158,
+        "width": 87,
+        "height": 28
+      }
+    },
+    {
+      "text": "fssai",
+      "confidence": 0.8782,
+      "box": {
+        "x": 855,
+        "y": 170,
+        "width": 83,
+        "height": 33
+      }
+    },
+    {
+      "text": "'10-GLUCOSE,LEVULOSE)",
+      "confidence": 0.9333,
+      "box": {
+        "x": 3,
+        "y": 187,
+        "width": 165,
+        "height": 20
+      }
+    },
+    {
+      "text": "ScLXE",
+      "confidence": 0.5134,
+      "box": {
+        "x": 608,
+        "y": 181,
+        "width": 142,
+        "height": 21
+      }
+    },
+    {
+      "text": "ESIN",
+      "confidence": 0.6507,
+      "box": {
+        "x": 1,
+        "y": 203,
+        "width": 363,
+        "height": 23
+      }
+    },
+    {
+      "text": "NA RYORCLLSRY",
+      "confidence": 0.4747,
+      "box": {
+        "x": 409,
+        "y": 198,
+        "width": 86,
+        "height": 10
+      }
+    },
+    {
+      "text": "COOL",
+      "confidence": 0.7224,
+      "box": {
+        "x": 515,
+        "y": 199,
+        "width": 30,
+        "height": 10
+      }
+    },
+    {
+      "text": "MANUFACTURED FOR: LIC. No.:10013022002245",
+      "confidence": 0.9706,
+      "box": {
+        "x": 553,
+        "y": 197,
+        "width": 465,
+        "height": 46
+      }
+    },
+    {
+      "text": "LUXEMDOURG 1977 1800",
+      "confidence": 0.7802,
+      "box": {
+        "x": 397,
+        "y": 214,
+        "width": 126,
+        "height": 16
+      }
+    },
+    {
+      "text": "VIENNA 10",
+      "confidence": 0.851,
+      "box": {
+        "x": 430,
+        "y": 228,
+        "width": 68,
+        "height": 11
+      }
+    },
+    {
+      "text": "MADRID 1964",
+      "confidence": 0.9028,
+      "box": {
+        "x": 426,
+        "y": 245,
+        "width": 71,
+        "height": 16
+      }
+    },
+    {
+      "text": "ROME 1940",
+      "confidence": 0.8304,
+      "box": {
+        "x": 433,
+        "y": 238,
+        "width": 64,
+        "height": 11
+      }
+    },
+    {
+      "text": "1293",
+      "confidence": 0.8213,
+      "box": {
+        "x": 177,
+        "y": 248,
+        "width": 54,
+        "height": 267
+      }
+    },
+    {
+      "text": "Dispose as DRY WASTE",
+      "confidence": 0.9589,
+      "box": {
+        "x": 273,
+        "y": 249,
+        "width": 33,
+        "height": 159
+      }
+    },
+    {
+      "text": "S",
+      "confidence": 0.357,
+      "box": {
+        "x": 429,
+        "y": 259,
+        "width": 66,
+        "height": 11
+      }
+    },
+    {
+      "text": "R",
+      "confidence": 0.7024,
+      "box": {
+        "x": 559,
+        "y": 260,
+        "width": 453,
+        "height": 20
+      }
+    },
+    {
+      "text": "GAC",
+      "confidence": 0.5956,
+      "box": {
+        "x": 403,
+        "y": 278,
+        "width": 90,
+        "height": 14
+      }
+    },
+    {
+      "text": "2",
+      "confidence": 0.344,
+      "box": {
+        "x": 1040,
+        "y": 270,
+        "width": 26,
+        "height": 20
+      }
+    },
+    {
+      "text": "Do not LITTER",
+      "confidence": 0.9798,
+      "box": {
+        "x": 261,
+        "y": 280,
+        "width": 25,
+        "height": 98
+      }
+    },
+    {
+      "text": "田",
+      "confidence": 0.5388,
+      "box": {
+        "x": 339,
+        "y": 286,
+        "width": 24,
+        "height": 37
+      }
+    },
+    {
+      "text": "C53",
+      "confidence": 0.6531,
+      "box": {
+        "x": 551,
+        "y": 326,
+        "width": 312,
+        "height": 34
+      }
+    },
+    {
+      "text": "5",
+      "confidence": 0.9915,
+      "box": {
+        "x": 328,
+        "y": 356,
+        "width": 28,
+        "height": 26
+      }
+    },
+    {
+      "text": "A Y",
+      "confidence": 0.6578,
+      "box": {
+        "x": 552,
+        "y": 356,
+        "width": 196,
+        "height": 20
+      }
+    },
+    {
+      "text": "(SP)-SRUJAN FOODS PVT LTD, D-8 MIDC",
+      "confidence": 0.9943,
+      "box": {
+        "x": 550,
+        "y": 371,
+        "width": 324,
+        "height": 26
+      }
+    },
+    {
+      "text": "泽",
+      "confidence": 0.6638,
+      "box": {
+        "x": 1029,
+        "y": 368,
+        "width": 37,
+        "height": 46
+      }
+    },
+    {
+      "text": "N.H.9,CHINCHOLI,SOLAPUR, MH-413255",
+      "confidence": 0.9792,
+      "box": {
+        "x": 593,
+        "y": 391,
+        "width": 331,
+        "height": 22
+      }
+    },
+    {
+      "text": "LIC.No.:10012022000067",
+      "confidence": 0.9999,
+      "box": {
+        "x": 592,
+        "y": 410,
+        "width": 306,
+        "height": 34
+      }
+    },
+    {
+      "text": "2",
+      "confidence": 0.9882,
+      "box": {
+        "x": 1025,
+        "y": 419,
+        "width": 41,
+        "height": 43
+      }
+    },
+    {
+      "text": "(BE)-SHASHI SIDNAL FOODS PVT LTD",
+      "confidence": 0.9962,
+      "box": {
+        "x": 550,
+        "y": 440,
+        "width": 296,
+        "height": 23
+      }
+    },
+    {
+      "text": "SANIKOPPA,BAILHONGAL,KA-591125",
+      "confidence": 0.9988,
+      "box": {
+        "x": 592,
+        "y": 458,
+        "width": 303,
+        "height": 23
+      }
+    },
+    {
+      "text": "LIC.No.:10012043000075",
+      "confidence": 0.9991,
+      "box": {
+        "x": 588,
+        "y": 474,
+        "width": 312,
+        "height": 38
+      }
+    },
+    {
+      "text": "D",
+      "confidence": 0.7442,
+      "box": {
+        "x": 1023,
+        "y": 475,
+        "width": 34,
+        "height": 25
+      }
+    },
+    {
+      "text": "(UN)-MODI BAKERS, 1, MODI COMPLEX",
+      "confidence": 0.9626,
+      "box": {
+        "x": 545,
+        "y": 509,
+        "width": 314,
+        "height": 24
+      }
+    },
+    {
+      "text": "07",
+      "confidence": 0.5735,
+      "box": {
+        "x": 1021,
+        "y": 508,
+        "width": 35,
+        "height": 25
+      }
+    },
+    {
+      "text": "8",
+      "confidence": 0.9997,
+      "box": {
+        "x": 178,
+        "y": 529,
+        "width": 34,
+        "height": 24
+      }
+    },
+    {
+      "text": "ULHASNAGAR, MH-421004",
+      "confidence": 0.9775,
+      "box": {
+        "x": 591,
+        "y": 530,
+        "width": 214,
+        "height": 20
+      }
+    },
+    {
+      "text": "NUTRITIONFACTS/INFORMATION",
+      "confidence": 0.9995,
+      "box": {
+        "x": 0,
+        "y": 553,
+        "width": 256,
+        "height": 25
+      }
+    },
+    {
+      "text": "LIC.No.:10012022000056",
+      "confidence": 0.9999,
+      "box": {
+        "x": 580,
+        "y": 546,
+        "width": 315,
+        "height": 39
+      }
+    },
+    {
+      "text": "AMOUNT PER 100g (approx.)",
+      "confidence": 0.9851,
+      "box": {
+        "x": 55,
+        "y": 573,
+        "width": 202,
+        "height": 26
+      }
+    },
+    {
+      "text": "ENERGY",
+      "confidence": 1.0,
+      "box": {
+        "x": 0,
+        "y": 594,
+        "width": 72,
+        "height": 20
+      }
+    },
+    {
+      "text": "453 kcal",
+      "confidence": 0.9917,
+      "box": {
+        "x": 186,
+        "y": 596,
+        "width": 69,
+        "height": 20
+      }
+    },
+    {
+      "text": "FIRST TWO CHARACTERS OF THE BATCH INDICATES THE",
+      "confidence": 0.9755,
+      "box": {
+        "x": 496,
+        "y": 596,
+        "width": 405,
+        "height": 21
+      }
+    },
+    {
+      "text": "PROTEIN",
+      "confidence": 0.9999,
+      "box": {
+        "x": 3,
+        "y": 612,
+        "width": 74,
+        "height": 21
+      }
+    },
+    {
+      "text": "7.0g",
+      "confidence": 0.9292,
+      "box": {
+        "x": 205,
+        "y": 611,
+        "width": 51,
+        "height": 26
+      }
+    },
+    {
+      "text": "ADDRESSOFTHEMANUFACTURINGUNIT&FSSAILICENCENUMBER",
+      "confidence": 0.9997,
+      "box": {
+        "x": 494,
+        "y": 611,
+        "width": 476,
+        "height": 22
+      }
+    },
+    {
+      "text": "CARBOHYDRATE",
+      "confidence": 0.9999,
+      "box": {
+        "x": 7,
+        "y": 631,
+        "width": 130,
+        "height": 20
+      }
+    },
+    {
+      "text": "77.39",
+      "confidence": 0.9772,
+      "box": {
+        "x": 202,
+        "y": 630,
+        "width": 52,
+        "height": 21
+      }
+    },
+    {
+      "text": "LAST CHARACTER OF THE BATCH INDICATES THE ADDRESS OF",
+      "confidence": 0.9824,
+      "box": {
+        "x": 488,
+        "y": 623,
+        "width": 445,
+        "height": 29
+      }
+    },
+    {
+      "text": "WHICHSUGARS",
+      "confidence": 0.9998,
+      "box": {
+        "x": 93,
+        "y": 645,
+        "width": 100,
+        "height": 21
+      }
+    },
+    {
+      "text": "24.80",
+      "confidence": 0.9974,
+      "box": {
+        "x": 204,
+        "y": 649,
+        "width": 47,
+        "height": 15
+      }
+    },
+    {
+      "text": "THEMANUFACTUREDFOR&FSSAILICENCENUMBER",
+      "confidence": 0.9939,
+      "box": {
+        "x": 488,
+        "y": 641,
+        "width": 369,
+        "height": 20
+      }
+    }
+  ]
+}
